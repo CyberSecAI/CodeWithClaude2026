@@ -1,0 +1,770 @@
+Hey everyone.
+A thank you. I didn't expect applause.
+Well, thank you so much for joining me
+today. I'm excited to speak with all of
+you about, you know, some lessons I've
+learned as I've been leading uh cla code
+and co-work. So, actually, first I
+should do an intro. So, yeah, my name is
+Fiona Fun and I lead engineering and
+product for cloud code and co-work. And
+before Enthropic, I had also built and
+led teams at Meta and Microsoft.
+So, with that, let's dive into some
+lessons I'm excited to share with all of
+you. Hopefully, maybe you'll find a
+couple of tidbits that may be helpful to
+you.
+So there are five topics I really want
+to cover today. The first is the
+bottlenecks have moved. And so when the
+bottlenecks have moved and it shifted,
+what are all the team norms that we
+felt, oh yeah, we have to rewrite some
+of these because it's changed. How we
+rolled it out, I'll talk about like how
+we rolled out some of these updated team
+norms. And in terms of the proof, what
+were some signals that I feel okay, this
+has given me confidence that we're
+trending in the direct right direction
+and maybe it'll help you as well. And
+lastly, I'll leave you all with maybe a
+topic for you to all take back to your
+team to discuss because I'd love to hear
+about um yeah, whether any of this
+resonated. So, with that, let's touch on
+this first topic, which is the shift.
+So, the bottlenecks have moved. And
+you'll notice there's that little
+subtitle there of what served you prior
+may no longer. This is one of my
+favorite sayings like actually I think
+this is the muscle that has really
+helped me whether at anthropic but also
+before at the other companies always
+being of that growth mindset like you
+know from all the talks this morning you
+see our rate of change is just
+increasing and so I found it's always
+helpful to look at what are either team
+norms that you've set up for your team
+or team processes and always ask
+yourself is it still serving its purpose
+so for years many years engineer ing
+bandwidth was the expensive thing and
+when you think about how did we all do
+software engineering everything was
+around kind of like protecting this
+resource right like we want to do a lot
+of planning because we want to make sure
+when we're building that we have high
+confidence that we're building the right
+thing or we want to do reviews like
+there's a lot of action around when
+engineering bandwidth was a limiting
+factor and maybe I'll pause there like
+when you think about our industry this
+is not the first time that the
+bottleneck has shifted come I I'll take
+you out back in a time machine with me
+will go all the way back to the early
+2000s. And if you all remember, so back
+then I had just joined Microsoft. I was
+working at Visual Studio. There was no
+such thing as cloud. It sounds crazy
+now, right? Like now cloud is so
+ubiquitous, but back then there was no
+cloud. And I remembered how we built
+Visual Studio was this one server room
+and everybody had to be on call for a
+week and then you'd just go into this
+room. And I remembered the whole build
+process. It was a queue. we can only
+merge six PRs at a time and anytime you
+know one of the tests would fail you
+have to debug which of those PRs caused
+that failure. So back then that was
+actually a big bottleneck and then now
+with cloud and with continuous build
+that bottleneck has also shifted. So
+this is just another shift for us to
+think about of when coding is no longer
+the bottleneck, what changes
+and so on the cloud code team, coding is
+really the slow part anymore. And so
+like that's why all the upstream and all
+the downstream kind of like processes we
+felt like we've had to change a little
+bit.
+So as an example, what were some of the
+old bottlenecks, right? Like writing
+code, writing tests, refactoring. In
+fact, I'll share a story with you all.
+When I first joined Cloud Code, I wanted
+to on board and fix some bugs. And I
+thought, you know what? I'm going to try
+testdriven development. I remember that
+was a really big thing a while back. You
+know, the idea is write the test first,
+make sure it fails, then do the change,
+then now you already have a test. But it
+was kind of like eating broccoli, you
+know, like even though I actually really
+do love broccoli, but I use as an
+example. Uh, but I remembered you. It
+feels like getting broccoli to write the
+test first because it's not always the
+most enjoyable part of the process. And
+I remember always itching to build a
+product and get to, you know, playing
+around with it. And so now with Claude,
+I remember the first bug. I'm like, you
+know what? I want to try test-driven
+development again. Let's write the test,
+but first it will fail. Let's verify it
+fails because that's how I could verify
+the test is actually testing something.
+And then we we you know, like I remember
+like making the bug fix and then we
+already had a test. And I remember that
+first experience, test-driven
+development was actually so much more
+fun and so much more pleasurable. It
+kind of took the tax out of testdriven
+development. So that was a big aha for
+me. Refactoring is another fun topic.
+Like I don't know if you all have felt
+this before, but you know, I've been on
+teams before where we have to either do
+like some big refactoring or some
+software architecture cleanup. And it's
+always a debate of when would we find
+time to do this work? this work that we
+know is so important but it always has
+to come off at the cost of trading you
+know time to build product. So again
+thanks to the models and with claude
+refactoring is also no longer a
+bottleneck. So now when those shifts
+happened, what am I starting to see that
+as the new bottlenecks uh verification
+that's a big one a lot of it's because
+the bandwidth has just increased so much
+we have to pay even more attention to is
+it correct and I'll talk about this in a
+little bit but also when roles are
+blurring and more people are you know
+checking in changes we also want to make
+sure everybody feels confident that
+their changes are correct who reviews
+that's a really popular topic and also
+how is it maintained And this one is
+interesting because again the throughput
+is now so much more also have to think
+about you know the cost of maintenance
+as well.
+So these were some of the old processes
+that we felt quietly stopped working.
+And I love that phrase quietly stops
+working because actually if I step back
+anytime, you know, hopefully when
+somebody puts a process in place, it's
+to solve a problem. But very often we
+forget to audit to go wait are those
+processes still required or is it still
+serving its purpose? So for example,
+what were some of the things that we had
+to change? planning norms when coding is
+no longer you know the the the
+bottleneck and and not like and you have
+like much more coding bandwidth how did
+we rethink through planning uh code
+ownership is also another interesting
+question almost all the claude code
+commits now are also you know
+co-authored by claude I don't think I've
+in the last few months ever saw a commit
+that wasn't a code review is a good one
+like that's a lot of questions I get a
+lot as well also team makeup roles are
+blurring and what are the skill sets
+that we're thinking, hey, you know what?
+These are actually skill sets we're kind
+of like doubling down into also
+knowledge sharing. What happens when
+maybe documentation is no longer your
+source of truth? So given some of those
+shifts, these are some of the team norms
+that we had to rewrite.
+We talked about code review uh and
+actually cat this morning in the talk
+really talked about clot code review as
+well. That was a really like that's how
+an amazing tool for us to make sure
+we're all still doing the right thing.
+Onboarding has also changed. I'll share
+with you all my onboarding story.
+Planning. I've talked about this already
+of when coding is no longer bottleneck.
+How does that shift our planning hiring
+and also org shape org shape is a fun
+one like you know we really want to keep
+everybody more agile and flatter orgs
+but every manager on cloud code actually
+start as an IC first.
+So with that how have our planning and
+technical debates changed.
+So in technical debate code wins you
+know it's like building is cheap
+argument is expensive. I'll actually
+share with you all like I remembered you
+know as I was onboarding I also want to
+do some code refactoring. I was kind of
+like hey what's some refactoring that we
+think is good to do but we haven't yet
+done. And I remembered me and Boris had
+a couple of debates of approach and in
+the old days I remember and I almost did
+this. I almost said, "Hey, Boris, let's
+just go to this meeting room and go to
+whiteboard and whiteboard it out."
+Almost did it. And I'm like, "Wait, if
+if you know with thanks to Claude, I can
+actually generate I remember generating
+three different versions of the PRs."
+And actually, that's what me and Boris
+used to have a really good technical
+debate because I wanted to not look at
+how the code was implemented, but also
+impact to the colleies. Uh prototyping
+is another good one. So now like anytime
+we're really having an idea, go ahead
+and prototype and let's actually go
+ahead and dog food it and then we'll
+try. I remember many years ago also
+having this uh prototyping conversation
+in another team I was at um you know
+because there was a debate there were
+kind of two camps. One camp of
+prototyping is great. It allows you to
+move quickly to build you know kind of
+like a war skeleton and get a feel for
+the product. But on the other camp I
+think there was a concern well you know
+co prototyping you're kind of doing it
+with speed. you're cutting corners and
+there's concern of what happens when you
+show a prototype that kind of works and
+then you know maybe you get hung up on
+it. You don't want to throw the code
+away and then you end up trying to ship
+that thing. It's not built to scale
+again with cloud now actually
+prototyping is a great way to get
+started because we could iterate and
+learn and then thanks to you know the
+model's help we can also then actually
+scale out a prototype to production a
+lot faster.
+So, what's one thing we reduce on the
+cloud code team? It's, you know, I might
+have been on teams before, maybe y'all
+as well, like design docs, like really
+in-depth planning and design docs. Most
+of our discussions actually happen in
+PRs or prototypes. And again, that's
+just because the engineering bandwidth,
+you know, is is now increased and coding
+is no longer a bottleneck. Uh, what do
+we really want to double down on?
+Verification. And this is something that
+I want to make sure you know me and our
+team keeps keeps doing better as well
+because now with all the bandwidth is
+even more important to how do you verify
+quality and I call this like you know
+like shift left. So for example what's
+better than you running it really sucks
+for me when I hear from our customers
+and developers and you all run into code
+I'm always like ah I wish we caught it
+first but you know what's actually
+better than me running into the bug
+first? Us having automation in place to
+actually catch it closer to the source.
+So that's like that's something that
+we're really constantly looking at as
+well of how to make sure we keep
+shifting left and automating more.
+Who made this change? This used to be a
+question that a lot of folks would ask
+of hey who who who was the last person
+that touched this or who's a code owner
+and now I encourage you all like if you
+find yourself asking that question to
+get to the root of the question like
+what are you trying to answer? Is it are
+you looking for someone that caused a
+regression? Are you looking for someone
+to answer a question? Are you looking to
+gain context? And is there a way that
+Claude could actually help you with
+that? Uh Cat actually talked about
+routines as well like earlier today.
+That's one of the routines I have set up
+like automatically, you know, in the
+morning, I like over my morning cup of
+coffee, I like to review all the
+feedback in our various feedback
+channels. So I have a routine that will
+go through to kind of amalgamate all the
+feedback for me and help me to identify
+themes.
+How do you keep up with code reviews
+before we actually ship claw code code
+review this was a question that I would
+get all the time and now I can share
+that answer with you all like definitely
+cla code code review is one one tool
+that has really helped us to make sure
+we keep up with the coding bandwidth and
+so where claude is really good right
+like the style and lint obvious bugs um
+anytime that you actually have like like
+if if there is a spec I encourage you to
+actually check the spec into your
+codebase because cloud is very good
+about verifying against spec drift but
+it's still really important to still
+have a human in the loop. So where do we
+find even in code reviews it's really
+important for humans still legal reviews
+anything that it's actually about risk
+tolerance. So especially when you look
+at trust boundaries it's all about that
+trust but verify and where humans bring
+a lot of the needed expertise.
+Product sense and taste is another fun
+one. So last uh December, I wanted to
+update Claude in our CLI to, you know,
+give Claude a little holiday theme. And
+I was ambitious. I wanted to turn Claude
+into a snowman. I, you know, like I I
+coded up an example and I asked her
+designer, "Hey, can you go ahead and
+review this for me?" And she gave me
+such excellent feedback of, "No, this
+looks nothing like a snowman. You you
+you create you turn Claude into Mr.
+Peanut. I don't know if Mr. Peanut's an
+American brand." in in in the US we had
+this jar of peanuts and you know their
+their mascot is this little peanut
+character and I was like holy crap
+that's totally right. I I thought he was
+a nomad, but you're right. It's a
+peanut. And so that's where like humans
+also like with that product sense, it's
+really important to keep that expertise
+in the loop as well.
+Now, what should my team makeup be?
+Because roles are blurring and clog is
+augmenting. And so when it comes to
+engineering, these are the two profiles
+that I now really like focus on. One is
+creative builders with product sense.
+Um, and then another is deep system
+expertise. And so this is definitely
+like you know the hard parts want to
+make sure that we can still have that
+trust but verify maybe I'll talk a
+little bit about product sense when I
+gave the talk in San Francisco
+afterwards a lot of uh engineers came up
+to ask me a question of how do I build
+this product sense muscle so I figure I
+will share with you all of what I have
+found helpful and it's helpful for me
+and maybe it will resonate with you all
+like for me it's this muscle that you
+build with it first starts with dog
+fooding and especially for managers
+actually like making sure you're
+spending time using the product that
+you're building and your team is
+building. In fact, most of the time
+anytime I join a new team like that's
+one of the first things I do. I'm like
+dog fooding the product to make sure I
+understand it because this way you
+really start feeling your product in
+your bones and you remember you always
+ask yourself wait when I was building
+this product what problem were we trying
+to solve? Like what experience was I
+trying to enable for our users? So with
+that in mind like dog fooding is a
+really good way especially for managers
+who before cloud you may not have time
+to be in the codebase anymore. Um but
+yeah like actually anytime I joined a
+team and I with dog food a lot of team
+members would always come up to me and
+say it's so awesome to see you using our
+product because you really care because
+that's a way for you to experience the
+work as well. So for me product sense
+comes from a lot of dog fooding and then
+also like iterating shipping and then
+going out to speak to customers. One of
+my personal passion projects is working
+with small businesses. I love small
+businesses. I feel small businesses are
+the lifeblood that forms our community
+and we actually just announced Claude
+for small business which is a project
+I'm so excited at. Um but I have a lot
+of friends that run restaurants and and
+they work incredibly hard and so I met
+with a lot of them to onboard them onto
+co-work because I wanted to see how you
+know like outside of enterprise with
+small businesses how do our users
+actually on board and I got such
+valuable feedback. It's actually really
+humbling to see we're in the onboarding
+flow. we there were so many things that
+we could have been doing better. So I
+really encourage you all to to dog food
+your product so then you really I call
+it like feeling it in your bones because
+it really keeps you um giving you a
+sense of what your product is doing. If
+not after a while you might find
+yourself making product decisions that's
+all just based on either metrics or
+dashboards or powerpoints. So definitely
+dog food dog food dog food or as we call
+anthropic ant food.
+So fill in cross functional gaps with
+cloud. This is interesting because I
+actually see this for all roles. So for
+example, designers on cloud code team
+previously you know anytime we wanted to
+make polish or UX fixes designers would
+go ahead and create that red line and
+then hand it off to engineering and it's
+always a wait, you know, because
+engineering is always about I have to
+build this product, I have to fix this
+bug, when will I time to actually do
+this polish. designers on cloud code
+actually, you know, use cloud to make a
+lot of those polish fixes. So then it
+really closes that iterative loop a lot
+faster. And again, this goes into why
+it's so important to do the
+verification. On the flip side, for me,
+like for example, one time I was fixing
+a bug and I needed a little bit of
+content help. I I don't know about you
+all, but as an engineer, I tend to be
+very verbose. And when I'm like, you
+know, if you ask me to write a very
+short sentence to describe what
+something's supposed to do, I tend to go
+too much into the weeds. But Claude was
+a really great content design partner
+for me. And so that's what I found
+really interesting on cloud code team
+for all roles. Claude is actually
+augmenting uh all the areas where you
+may not be as strong.
+So this was the manager slide that I was
+like, "Oh, this was, you know, maybe a
+good spicy topic, but when I first
+joined cloud code, this was one of the
+first things I changed of like, hey, I
+was working with a recruiting team to go
+because I believe so much in dog
+fooding." And on cloud code, we're using
+cloud to build cloud, we're using cloud
+code to build cloud code. And so every
+manager started as an IC first. I
+actually felt this worked really well
+because it enabled managers before you
+have to worry about the responsibility
+of supporting people actually having
+time to, you know, like roll up your
+sleeves and get into the codebase and
+learn what it's like to be an engineer
+on the team. Um, maybe I'll also, you
+know, like touch on this is also a great
+time that if you're a manager to
+actually get some maker hours back and
+actually get back into the codebase
+because the onboarding is a lot less
+daunting than it used to be. Um actually
+even before anthropic there were
+different roles I've had where I've
+switched between manager and IC and I
+think every time I switched to an IC it
+really helped me build up the
+engineering toolbox but that onboarding
+was always a little like you know that
+slight hesitation because it could be
+daunting if you haven't done it in a
+while but like speaking for myself I
+remember when I onboarded to claude it
+was uh it was such a different
+experience and actually that's what
+we'll go into next. So in terms of
+knowledge sharing what becomes a new
+source of truth. So when I was on
+boarding to claude the code is our
+source of truth and so again like in the
+old days anytime I join new team I'd
+meet with all the engineers to I still
+do meet with all the engineers on the
+team but now we talk a lot more about
+what's on top of mind and because before
+I would always so like do these tech
+deep dives and now I actually did my
+first you know like tech deep dive just
+with Claude like because Claude has is
+really good at answering all these
+questions I have. So even when I was
+doing that first bug fix, I remember
+asking Claude, hey, before I dive into
+this bug fix, can you actually teach me
+a little bit about the surface area and
+also what what about all the areas
+around that bug as well?
+And so for cloud code and co-work team,
+our code is a source of truth. I would
+encourage all of your teams like if
+whatever is your source of truth where
+whether it's a spec you might actually
+change that into a skill that you check
+into the codebase like whatever you can
+make sure becomes your source of truth
+keep in the codebase because this way
+you can actually keep it up to date
+because that's the other thing when
+coding you know bandwidth is so much you
+know like so much more it also makes it
+easier for any documentation that also
+doesn't isn't part of the update loop to
+get out of date.
+So how did we roll out all these changes
+on the cloud code team? There were
+things that we was really important that
+we aligned as a team and then there was
+also I want to make sure we also give
+space for bottoms up because each team
+is focused on different things and there
+might be you know like different tool
+chains or anything that resonates more
+with each team. So what did we align
+with kind of like the teams as a mustos
+these are some of our cloud code team
+principles and what we call forcing
+function and this slide is out of date
+like I shouldn't put every engineer it's
+every teammate uses cloud code and also
+co-work actually so like us using our
+product day and day has been really
+important quadify everything we can and
+so like anytime we have a question of
+you know what yeah I'm doing this what's
+better than me doing it can cloud do it
+for me because then it actually frees up
+more of my bandwidth for other problems
+to solve. And my last one is explicit
+permission to kill old processes. Again,
+it's the e even our team principles and
+even processes that we put on even after
+a few months when we notice, hey, is
+this really serving its intended
+purpose, we really always give ourselves
+permission to always critique and make
+sure to always revisit and but bottoms
+up there's a lot of freedom for you know
+like you know team or pods to adapt. So
+for example, how cloud shows up in team
+triage or any teams like planning
+rituals or standups or which workflows
+get cloudified first that is a lot of
+bottoms up. So I found that this balance
+of make sure you align with the team in
+terms of like what's important in terms
+of team culture and also update those as
+you go but then leave some room for each
+pod to adapt.
+So if I zoom out what were the three
+things that I prioritized for cloud code
+and co-work that I think has worked
+really well. Uh number one it was you
+know like keeping the org agile and as
+flat as possible having managers also
+you know like support pots of work but
+like also really get into the codebase
+and be directly responsible for parts of
+the product as well. Uh number two
+that's quadify so if cla can do it
+claude should. So that's always a
+question we're asking and and maybe
+that's the other interesting too like um
+you know this morning you heard the
+talks about the models the models are
+improving at an amazing pace. So
+sometimes we might find even if cla
+wasn't good at doing something two or
+three months ago now with like a model
+update it's actually gone really good.
+And this is why again it always goes
+back to that whole like always revisit
+and always have the growth mindset
+because the models are also improving
+really fast. And again, you know, people
+don't delete processes on their own.
+They tend to pile up. I remember I was
+in a team where we had so many different
+SLAs's. There was an SLA for P 0 bugs,
+an SLA for incident response. And after
+a while, I'm like, with all these
+SLAs's, I need a stacked rank list to
+actually have because even the engineers
+are coming to me going, there's only 24
+hours in a day. Like, which SLA am I
+supposed to do? And but that's why it's
+always so important to audit. I remember
+at that time, I'm like, you know what,
+we really should be auditing. Are all
+these SLAs still really necessary?
+So now for the proof, what are some
+signals that we're seeing of like is it
+actually working? So these are some
+numbers that I find as helpful that I
+wanted to share with you all. And so
+these were some of the shifts we've seen
+as we've been kind of uh improving our
+workflows. Onboarding ramp up time goes
+down. Like I I think that's actually a
+really good signal of uh like we used to
+have this thing of like what's the span
+of time it takes for the engineer to
+land their first PR the onboarding ramp
+up time and also like cost to other team
+members we've noticed keeps going down
+like I I I even like a lot of times
+sometimes when a person joins a team
+they'll ask me a question I'm like
+that's a great question we should ask
+Claude like that's how we kind of uh
+like Claude has really helped us to
+onboard and answer a lot of questions
+which is also why for the managers I
+it's why it's fun for me to actually get
+back into the codebase. Cuz in the old
+days, I would actually feel bad because
+I feel like, oh, I need to learn this
+area. I'm going to ask an engineer and
+take time away from their day because
+they're all so busy. But now, thanks to
+cloud, I don't feel like I'm wasting
+anybody's time. The PR cycle time should
+also go down. But this one's
+interesting. I'm going to say it's
+important for you to not just look at
+the end to end, but actually break it
+out into like what are all the different
+funnels in terms of a PR? Because if
+your PR cycle time isn't going down, it
+might not mean you're not adopting AI.
+It could be other parts of your queue is
+actually getting jammed up because of
+all the throughput. So for example, are
+your build and CI systems keeping up? So
+for PR cycle time, I think it's actually
+really healthy to break it down into all
+the different chunks and seeing which of
+those you might be able to improve or
+automate. And lastly, claude assisted
+commits go up. As I mentioned, I don't
+think I've ever like in the last few
+months, I've not seen a commit that
+wasn't uh you know like assisted by
+Claude. But if I step out like I would
+say what's even more important than just
+throughput is whatever you know you and
+your team are trying to solve whatever
+the product or problem find some way to
+measure that because outside of just
+throughput hopefully we're also making
+meaningful change to make the product
+better or improve quality.
+Okay. So now it's time for me to maybe
+share like a little takeaway home
+exercise that might be fun for you to
+take back and go have discussions with
+your team. But first, I want to be
+really transparent. I still have
+questions as well. So, I'll share with
+some of those that we're still working
+out through the cloud code team. So, for
+example, do you still need separate iOS
+and Android orgs? Like that was kind of
+like more of the traditional org
+approach of you would usually have like
+one for iOS, one for Android. But now
+with cloud and enabling our engineers to
+go flex across different mobile
+platforms, we're thinking, hey, do we
+really still need the, you know, two
+separate mobile teams? uh how far do you
+push fully automated reviews? We always
+want to make sure we're striking that
+right balance between kind of speed and
+fast enough and make sure we're not
+losing something important
+and roles are blurring and how do we
+make sure everybody is productive and
+that's why we're we're right now looking
+through verification is a big one so
+that hey as we're going through make
+sure everybody that makes a change has
+confidence in their change but also what
+are all the different parts of the
+workflow too like I'm working with my
+designers we actually just you know
+announced claw design also thinking
+through how can we make sure that we're
+also improving the workflows of all the
+functions on the team.
+So with that, this is what I would love
+to leave you all with. Pick your
+noisiest workflow or it could be just
+some workflow or team meeting that you
+don't particularly enjoy or it's really
+high tax on the team. Like I remembered
+I was on another team where we would
+have this really expensive weekly
+meeting and I noticed everybody's on
+their laptop and you know except for
+when they have to pop their head up to
+give status and then they go back to
+their laptop. I'm like, is this is when
+you count, you know, like how many
+people's in this room? This is a very
+expensive room. So, always like kind of
+like pick a workflow and always ask
+yourself, is it still serving its
+purpose? Or if it's like really
+expensive, is this something that Claude
+might be able to help you with? And kind
+of like do this one step at a time.
+And with that, thank you so much for
+listening to my talk. It's been a
+pleasure.

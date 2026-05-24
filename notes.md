@@ -1,0 +1,1 @@
+use ~/.claude/skills/youtube-transcript/ to extract the key insights from each transcript in https://www.youtube.com/playlist?list=PLmWCw1CzcFilPJdvw6scjHjbBripZWFps
