@@ -15,30 +15,30 @@
 ## Individual Session Insights
 *Key Insights from each session, including takeaways and notable quotes.*
 
-| Title | Key Insights | Transcript |
-| --- | --- | --- |
-| Code with Claude London 2026： Opening Keynote | [Insights](./insights/Code%20with%20Claude%20London%202026%EF%BC%9A%20Opening%20Keynote.md) | [Transcript](./transcripts/Code%20with%20Claude%20London%202026%EF%BC%9A%20Opening%20Keynote.txt) |
-| Beyond the basics with Claude Code | [Insights](./insights/Beyond%20the%20basics%20with%20Claude%20Code.md) | (Web Research) |
-| Running an AI-native engineering org | [Insights](./insights/Running%20an%20AI-native%20engineering%20org.md) | [Transcript](./transcripts/Running%20an%20AI-native%20engineering%20org.txt) |
-| Getting more out of the Claude Platform | [Insights](./insights/Getting%20more%20out%20of%20the%20Claude%20Platform.md) | (Web Research) |
-| The prompting playbook | [Insights](./insights/The%20prompting%20playbook.md) | [Transcript](./transcripts/The%20prompting%20playbook.txt) |
-| The capability curve | [Insights](./insights/The%20capability%20curve.md) | (Web Research) |
-| Designing with Claude： From prompt to production | [Insights](./insights/Designing%20with%20Claude:%20From%20prompt%20to%20production.md) | (Web Research) |
-| Building with Claude on Google Cloud | [Insights](./insights/Building%20with%20Claude%20on%20Google%20Cloud.md) | (Web Research) |
-| Building signals that trade themselves | [Insights](./insights/Building%20signals%20that%20trade%20themselves.md) | [Transcript](./transcripts/Building%20signals%20that%20trade%20themselves.txt) |
-| Picking the right model | [Insights](./insights/Picking%20the%20right%20model.md) | [Transcript](./transcripts/Picking%20the%20right%20model.txt) |
-| Memory and dreaming for self learning agents | [Insights](./insights/Memory%20and%20dreaming%20for%20self%20learning%20agents.md) | [Transcript](./transcripts/Memory%20and%20dreaming%20for%20self%20learning%20agents.txt) |
-| What legal agents inherit from coding agents： Lessons from Legora | [Insights](./insights/What%20legal%20agents%20inherit%20from%20coding%20agents:%20Lessons%20from%20Legora.md) | (Web Research) |
-| How to get to production faster with Claude Managed Agents | [Insights](./insights/How%20to%20get%20to%20production%20faster%20with%20Claude%20Managed%20Agents.md) | [Transcript](./transcripts/How%20to%20get%20to%20production%20faster%20with%20Claude%20Managed%20Agents.txt) |
-| Build a production-ready agent with Claude Managed Agents | [Insights](./insights/Build%20a%20production-ready%20agent%20with%20Claude%20Managed%20Agents.md) | [Transcript](./transcripts/Build%20a%20production-ready%20agent%20with%20Claude%20Managed%20Agents.txt) |
-| The thinking lever | [Insights](./insights/The%20thinking%20lever.md) | [Transcript](./transcripts/The%20thinking%20lever.txt) |
-| How Lovable vibecodes production software at scale | [Insights](./insights/How%20Lovable%20vibecodes%20production%20software%20at%20scale.md) | (Web Research) |
-| Building AI-native at enterprise scale： monday.com, Doctolib, Delivery Hero | [Insights](./insights/Building%20AI-native%20at%20enterprise%20scale%EF%BC%9A%20monday.com,%20Doctolib,%20and%20Delivery%20Hero.md) | (Web Research) |
-| From one person to 80： Scaling a hypergrowth org with Claude Code | [Insights](./insights/From%20one%20person%20to%2080%EF%BC%9A%20Scaling%20a%20hypergrowth%20engineering%20org%20with%20Claude%20Code.md) | (Web Research) |
-| Build a proactive agent workflow with Claude Code | [Insights](./insights/Build%20a%20proactive%20agent%20workflow%20with%20Claude%20Code.md) | [Transcript](./transcripts/Build%20a%20proactive%20agent%20workflow%20with%20Claude%20Code.txt) |
-| Build AI agents using Claude in Microsoft Foundry | [Insights](./insights/Build%20AI%20agents%20using%20Claude%20in%20Microsoft%20Foundry.md) | [Transcript](./transcripts/Build%20AI%20agents%20using%20Claude%20in%20Microsoft%20Foundry.txt) |
-| Coding is no longer the constraint： Scaling devex to teams and agents at Spotify | (TBD) | (Web Research) |
-| AI with Claude on AWS： From code to orchestration | [Insights](./insights/AI%20with%20Claude%20on%20AWS%EF%BC%9A%20From%20code%20to%20orchestration.md) | [Transcript](./transcripts/AI%20with%20Claude%20on%20AWS%EF%BC%9A%20From%20code%20to%20orchestration.txt) |
-| Stop babysitting your agents | (TBD) | (Web Research) |
-| What's new in Claude Code | (TBD) | (Web Research) |
-| Closing Remarks： Code with Claude London 2026 | [Insights](./insights/Closing%20Remarks%EF%BC%9A%20Code%20with%20Claude%20London%202026.md) | (Web Research) |
+| Title | Key Insights | Transcript | Video |
+| --- | --- | --- | --- |
+| Code with Claude London 2026： Opening Keynote | [Insights](./insights/Code%20with%20Claude%20London%202026%EF%BC%9A%20Opening%20Keynote.md) | [Transcript](./transcripts/Code%20with%20Claude%20London%202026%EF%BC%9A%20Opening%20Keynote.txt) | [Video](https://www.youtube.com/watch?v=6amLO7I9xdg) |
+| Beyond the basics with Claude Code | [Insights](./insights/Beyond%20the%20basics%20with%20Claude%20Code.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=tuY2ChJIx48) |
+| Running an AI-native engineering org | [Insights](./insights/Running%20an%20AI-native%20engineering%20org.md) | [Transcript](./transcripts/Running%20an%20AI-native%20engineering%20org.txt) | [Video](https://www.youtube.com/watch?v=IA5LWIGqnyM) |
+| Getting more out of the Claude Platform | [Insights](./insights/Getting%20more%20out%20of%20the%20Claude%20Platform.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=QIriO1-vHYw) |
+| The prompting playbook | [Insights](./insights/The%20prompting%20playbook.md) | [Transcript](./transcripts/The%20prompting%20playbook.txt) | [Video](https://www.youtube.com/watch?v=G2B0YWuJUgI) |
+| The capability curve | [Insights](./insights/The%20capability%20curve.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=DNRddIEoH3c) |
+| Designing with Claude： From prompt to production | [Insights](./insights/Designing%20with%20Claude:%20From%20prompt%20to%20production.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=Uvl-tRga98g) |
+| Building with Claude on Google Cloud | [Insights](./insights/Building%20with%20Claude%20on%20Google%20Cloud.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=l8fxVYIP4HQ) |
+| Building signals that trade themselves | [Insights](./insights/Building%20signals%20that%20trade%20themselves.md) | [Transcript](./transcripts/Building%20signals%20that%20trade%20themselves.txt) | [Video](https://www.youtube.com/watch?v=EOg4gY0Yln0) |
+| Picking the right model | [Insights](./insights/Picking%20the%20right%20model.md) | [Transcript](./transcripts/Picking%20the%20right%20model.txt) | [Video](https://www.youtube.com/watch?v=P0uMXS6emHA) |
+| Memory and dreaming for self learning agents | [Insights](./insights/Memory%20and%20dreaming%20for%20self%20learning%20agents.md) | [Transcript](./transcripts/Memory%20and%20dreaming%20for%20self%20learning%20agents.txt) | [Video](https://www.youtube.com/watch?v=IGo225tfF2I) |
+| What legal agents inherit from coding agents： Lessons from Legora | [Insights](./insights/What%20legal%20agents%20inherit%20from%20coding%20agents:%20Lessons%20from%20Legora.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=nho1YAEPuwA) |
+| How to get to production faster with Claude Managed Agents | [Insights](./insights/How%20to%20get%20to%20production%20faster%20with%20Claude%20Managed%20Agents.md) | [Transcript](./transcripts/How%20to%20get%20to%20production%20faster%20with%20Claude%20Managed%20Agents.txt) | [Video](https://www.youtube.com/watch?v=zenIB7XLZxQ) |
+| Build a production-ready agent with Claude Managed Agents | [Insights](./insights/Build%20a%20production-ready%20agent%20with%20Claude%20Managed%20Agents.md) | [Transcript](./transcripts/Build%20a%20production-ready%20agent%20with%20Claude%20Managed%20Agents.txt) | [Video](https://www.youtube.com/watch?v=jWWsLe4Gh5Y) |
+| The thinking lever | [Insights](./insights/The%20thinking%20lever.md) | [Transcript](./transcripts/The%20thinking%20lever.txt) | [Video](https://www.youtube.com/watch?v=T7KqH7kYnE4) |
+| How Lovable vibecodes production software at scale | [Insights](./insights/How%20Lovable%20vibecodes%20production%20software%20at%20scale.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=mhW-XXnDFSU) |
+| Building AI-native at enterprise scale： monday.com, Doctolib, Delivery Hero | [Insights](./insights/Building%20AI-native%20at%20enterprise%20scale%EF%BC%9A%20monday.com,%20Doctolib,%20and%20Delivery%20Hero.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=XFaeIbL-lvE) |
+| From one person to 80： Scaling a hypergrowth org with Claude Code | [Insights](./insights/From%20one%20person%20to%2080%EF%BC%9A%20Scaling%20a%20hypergrowth%20engineering%20org%20with%20Claude%20Code.md) | (Web Research) | [Video](https://www.youtube.com/watch?v=VueeyKcquoA) |
+| Build a proactive agent workflow with Claude Code | [Insights](./insights/Build%20a%20proactive%20agent%20workflow%20with%20Claude%20Code.md) | [Transcript](./transcripts/Build%20a%20proactive%20agent%20workflow%20with%20Claude%20Code.txt) | [Video](https://www.youtube.com/watch?v=eSP7PLTXNy8) |
+| Build AI agents using Claude in Microsoft Foundry | [Insights](./insights/Build%20AI%20agents%20using%20Claude%20in%20Microsoft%20Foundry.md) | [Transcript](./transcripts/Build%20AI%20agents%20using%20Claude%20in%20Microsoft%20Foundry.txt) | [Video](https://www.youtube.com/watch?v=TQd_YQvydVg) |
+| Coding is no longer the constraint： Scaling devex to teams and agents at Spotify | (TBD) | (Web Research) | [Video](https://www.youtube.com/watch?v=zFslvuvYifQ) |
+| AI with Claude on AWS： From code to orchestration | [Insights](./insights/AI%20with%20Claude%20on%20AWS%EF%BC%9A%20From%20code%20to%20orchestration.md) | [Transcript](./transcripts/AI%20with%20Claude%20on%20AWS%EF%BC%9A%20From%20code%20to%20orchestration.txt) | [Video](https://www.youtube.com/watch?v=5YHIrTYxM3w) |
+| Stop babysitting your agents | (TBD) | (Web Research) | [Video](https://www.youtube.com/watch?v=wI0ptqCSL0I) |
+| What's new in Claude Code | (TBD) | (Web Research) | [Video](https://www.youtube.com/watch?v=sRvUXLquiRg) |
+| Closing Remarks： Code with Claude London 2026 | [Insights](./insights/Closing%20Remarks%EF%BC%9A%20Code%20with%20Claude%20London%202026.md) | (Web Research) | [Video](https://www.youtube.com/playlist?list=PLmWCw1CzcFilPJdvw6scjHjbBripZWFps) |
